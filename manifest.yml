@@ -16,7 +16,7 @@ spec:
         app: basic-crud
     spec:
       containers:
-      - image: basic-crud:v1
+      - image: immanuelhardjo/basic-crud:v1
         name: basic-crud
         imagePullPolicy: Always
         ports:
