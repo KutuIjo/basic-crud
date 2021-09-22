@@ -1,6 +1,6 @@
 # basic-crud
  
-1. git clone https://github.com/user-name/repository.git.
+1. git clone https://github.com/immanuelhardjo/basic-crud
 2. npm install
 3. Set up MongoDB database & configure .env connection string
 4. Dockerize application:
