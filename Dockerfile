@@ -1,6 +1,5 @@
-FROM node:12
+FROM node:12-alpine
 
-RUN mkdir /app
 WORKDIR /app
 
 COPY package.json package-lock.json ./

@@ -1,0 +1,23 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: basic-crud
+  name: basic-crud
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: basic-crud
+  template:
+    metadata:
+      labels:
+        app: basic-crud
+    spec:
+      containers:
+      - image: basic-crud:v1
+        name: basic-crud
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 5000
