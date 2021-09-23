@@ -13,13 +13,11 @@ Description: Basic CRUD implementation using Express & MongoDB on NodeJS. Deploy
 3. Set up MongoDB database & configure .env connection string. 
 
 4. Dockerize application:
-    a. Build docker image: 
-    ```docker build -t immanuelhardjo/basic-crud:v1 . ```
-    b. Push image to docker hub registry: 
-    ``` docker push immanuelhardjo/basic-crud:v1 ```
+    - Build docker image: ```docker build -t immanuelhardjo/basic-crud:v1 . ```
+    - Push image to docker hub registry: ``` docker push immanuelhardjo/basic-crud:v1 ```
     
 5. Setup Kubernetes:
-    a. Create new Google Cloud Platform Project 
-    b. Setup Google Kubernetes Engine
-    c. Connect ```kubectl``` to GKE cluster
-    c. Deploy: ```apply -n basic-crud-ns -f manifest.yml```
+    - Create new Google Cloud Platform Project 
+    - Setup Google Kubernetes Engine
+    - Connect ```kubectl``` to GKE cluster
+    - Deploy: ```apply -n basic-crud-ns -f manifest.yml```
