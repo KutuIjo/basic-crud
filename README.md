@@ -1,7 +1,7 @@
 # Basic CRUD Application
  
-Created by: Immanuel Hardjo
-Description: Basic CRUD implementation using Express & MongoDB on NodeJS. Deployment using Docker and Kubernetes (GKE)
+- Created by: Immanuel Hardjo
+- Description: Basic CRUD implementation using Express & MongoDB on NodeJS. Deployment using Docker and Kubernetes (GKE)
  
 ## Configuration steps:
 1. Clone the project
