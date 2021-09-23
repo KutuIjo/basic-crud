@@ -13,11 +13,22 @@
 3. Set up MongoDB database & configure .env connection string. 
 
 4. Dockerize application:
+
     - Build docker image: ```docker build -t immanuelhardjo/basic-crud:v1 . ```
     - Push image to docker hub registry: ``` docker push immanuelhardjo/basic-crud:v1 ```
     
 5. Setup Kubernetes:
     - Create new Google Cloud Platform Project 
+    ![image](https://user-images.githubusercontent.com/31676311/134446482-3a978456-cc50-4f07-a68b-21513da58768.png)
     - Setup Google Kubernetes Engine
-    - Connect ```kubectl``` to GKE cluster
+    - Setup glouc CLI and Configure
+      - Download and install the [SDK](https://cloud.google.com/sdk/docs/install)
+      - Initialize gcloud cli: ```gcloud init```
+      - Auth login: ```gcloud auth login```
+      - Set the current project: ```gcloud config set project basic-crud-326823```
+    - Connect ```kubectl``` to GKE cluster: ```gcloud container clusters get-credentials basic-crud-cluster --zone asia-southeast2-a --project basic-crud-326823```
     - Deploy: ```apply -n basic-crud-ns -f manifest.yml```
+
+6. Testing the application
+   - List the service: ```kubectl get svc```
+   - Connect to the external IP and port of the service: http://34.101.208.12:8080/
