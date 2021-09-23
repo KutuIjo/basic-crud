@@ -19,7 +19,6 @@
     
 5. Setup Kubernetes:
     - Create new Google Cloud Platform Project 
-    ![image](https://user-images.githubusercontent.com/31676311/134446482-3a978456-cc50-4f07-a68b-21513da58768.png)
     - Setup Google Kubernetes Engine
     - Setup glouc CLI and Configure
       - Download and install the [SDK](https://cloud.google.com/sdk/docs/install)
